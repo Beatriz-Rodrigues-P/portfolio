@@ -54,18 +54,16 @@
 
             <article id="home_texto" class="flex home_content">
 
-                <h4>Bem-vindo ao Novo Universo</h4>
-                <h1>Mundos diferentes para pessoas diferentes</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione non magnam facere tempora tenetur, nemo minima labore natus, recusandae blanditiis impedit quia adipisci sed! Quas suscipit deleniti dignissimos exercitationem iure!</p>
-                <a href="https://github.com/Beatriz-Rodrigues-P" target="_blank" class="botao">
-                    Explorar
-                </a>
+                <h1>Beatriz Rodrigues</h1>
+                <h4>Journalist to Developer: code is my new language!</h4>
+                <p>Olá, sou Beatriz! Com uma paixão tanto pelo jornalismo quanto pelo desenvolvimento fullstack JavaScript, estou transformando ideias em realidades digitais. Aqui, compartilho minha jornada, projetos inovadores e a fusão de comunicação e tecnologia. Vamos explorar juntos!</p>
+                <a href="https://github.com/Beatriz-Rodrigues-P" target="_blank" class="botao">Explorar</a>
 
             </article>
 
             <article id="home_imagem" class="home_content">
                 <img
-                    src="./assets/img/astronauta.svg"
+                    src="./assets/img/logo_portfolio.svg"
                     alt="Capacete de Astronauta Animado"
                 >
             </article>
@@ -74,55 +72,57 @@
 
         <section id="about"  class="flex about_container">
 
-            <article id="home_imagem" class="about_content">
+            <article id="about_imagem" class="about_content">
             <img
-                src="./assets/img/user_02.svg"
+                src="./assets/img/user_perfil.svg"
                 alt="Foto do Perfil do Github"
             >
             </article>
 
-            <article id="about_texto" class="flex home_content">
+            <article id="about_texto" class="about_content">
                 <h1>Sobre mim</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate qui ut provident non vel voluptatem ullam quo animi, numquam itaque dolorem beatae, nemo repudiandae iure debitis incidunt tenetur praesentium delectus?</p>
-                
+                <p>Formada em jornalismo, migrei para a tecnologia durante a pandemia. Comecei com Front-End na PrograMaria, aprendendo HTML, CSS e JavaScript. Atualmente, curso Desenvolvimento Full Stack JavaScript na Generation Brasil, focando em TypeScript, SQL, Node.js e React.</p>
+                <p>Essa transição é desafiadora e gratificante. Estou determinada a construir uma carreira sólida na tecnologia, contribuindo para projetos inovadores. 🚀</p>
+                <p>Para conhecer meus projetos, acesse meu GitHub!</p>
+
                 <div id="about_github">
-                    <a href="https://github.com/Beatriz-Rodrigues-P" target="_blank" class="botao">
-        
-                        Github
-                    </a>
-                    <p>200 Seguidores</p>
-                    <p>20 Repositórios</p>
+                    <a href="https://github.com/Beatriz-Rodrigues-P" target="_blank" class="botao">Github</a>
                 </div>
             </article>
 
         </section>
 
-        <section id="contact">
+        <!-- Seção de contato -->
+        <section id="contact" class="contato_container">
 
-            <h4>Contate-me</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni aspernatur cupiditate nisi temporibus debitis accusantium. Ducimus dolor cupiditate quas voluptatum adipisci accusamus possimus sapiente ut saepe, debitis, eos corporis! Possimus.</p>
+            <h4>Entre em contato</h4>
+            <p>Surgiu uma curiosidade sobre meu trabalho? Conecte-se às redes e vamos agregar ideias!</p>
             
-            <div id="icones_redes_sociais">
-                <a href="" target="_blank">
+            <div id="icones_redes_sociais" class="flex social_container">
+                <a href="https://www.linkedin.com/in/beatriz-rodrigues-paula" target="_blank">
                     <img 
                     src="./assets/img/linkedin.svg"
-                    alt="Logo do LinkedIn"
+                    alt="Logo do LinkedIn" class="social_icon"
                     >
                 </a>
-                <a href="" target="_blank">
+                <a href="https://github.com/Beatriz-Rodrigues-P" target="_blank">
                     <img 
                     src="./assets/img/github.svg"
-                    alt="Logo do Github"
+                    alt="Logo do Github" class="social_icon"
                     >
                 </a>
-                <a href="" target="_blank">
+                <a href="https://www.instagram.com/" target="_blank">
                     <img 
                     src="./assets/img/instagram.svg"
-                    alt="Logo do Instagram"
+                    alt="Logo do Instagram" class="social_icon"
                     >
                 </a>
             </div>
+            
+            <!-- Seção de formulário -->
 
+            <h4 class="form_title">Formulário</h4>
+            <p class="form_subtitle">Vamos construir projetos incríveis juntos? Preencha o formulário que entrarei em contato.</p>
             <form action="envioform.html" method="POST">
                 
                 <label for="nome">Nome</label>
@@ -160,7 +160,7 @@
                 >
                 </textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="botao">Enviar</button>
             </form>
 
         </section>
