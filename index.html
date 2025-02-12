@@ -14,7 +14,7 @@
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Beatriz Rodrigues">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" href="./assets/img/favicon.svg"/> 
+    <link rel="icon" href="./assets/img/user_perfil.svg"/> 
     <!-- Link para folha de estilos css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfólio da @Beatriz-Rodrigues-P</title>
@@ -28,7 +28,7 @@
 
             <!-- Titulo do Cabeçalho -->
             <div id="titulo">
-                <a href="#">Universo</a>
+                <a href="#">Meu portfólio</a>
             </div>
 
             <!-- Menu -->
@@ -57,74 +57,37 @@
                 <h1>Beatriz Rodrigues</h1>
                 <h4>Journalist to Developer: code is my new language!</h4>
                 <p>Olá, sou Beatriz! Com uma paixão tanto pelo jornalismo quanto pelo desenvolvimento fullstack JavaScript, estou transformando ideias em realidades digitais. Aqui, compartilho minha jornada, projetos inovadores e a fusão de comunicação e tecnologia. Vamos explorar juntos!</p>
-                <a href="https://github.com/Beatriz-Rodrigues-P" target="_blank" class="botao">Explorar</a>
+                <a href="https://linktr.ee/beatriz_rp" target="_blank" class="botao">Explorar</a>
 
             </article>
 
             <article id="home_imagem" class="home_content">
                 <img
                     src="./assets/img/logo_portfolio.svg"
-                    alt="Capacete de Astronauta Animado"
+                    alt="Notebook com um café ao lado esquerdo"
                 >
             </article>
 
         </section>
 
-        <section id="about"  class="flex about_container">
-
-            <article id="about_imagem" class="about_content">
-            <img
-                src="./assets/img/user_perfil.svg"
-                alt="Foto do Perfil do Github"
-            >
-            </article>
-
-            <article id="about_texto" class="about_content">
-                <h1>Sobre mim</h1>
-                <p>Formada em jornalismo, migrei para a tecnologia durante a pandemia. Comecei com Front-End na PrograMaria, aprendendo HTML, CSS e JavaScript. Atualmente, curso Desenvolvimento Full Stack JavaScript na Generation Brasil, focando em TypeScript, SQL, Node.js e React.</p>
-                <p>Essa transição é desafiadora e gratificante. Estou determinada a construir uma carreira sólida na tecnologia, contribuindo para projetos inovadores. 🚀</p>
-                <p>Para conhecer meus projetos, acesse meu GitHub!</p>
-
-                <div id="about_github">
-                    <a href="https://github.com/Beatriz-Rodrigues-P" target="_blank" class="botao">Github</a>
-                </div>
-            </article>
-
-        </section>
+        <!-- Seção sobre -->
+        <section id="about"  class="flex about_container"></section>
 
         <!-- Seção de contato -->
         <section id="contact" class="contato_container">
-
-            <h4>Entre em contato</h4>
-            <p>Surgiu uma curiosidade sobre meu trabalho? Conecte-se às redes e vamos agregar ideias!</p>
             
-            <div id="icones_redes_sociais" class="flex social_container">
-                <a href="https://www.linkedin.com/in/beatriz-rodrigues-paula" target="_blank">
-                    <img 
-                    src="./assets/img/linkedin.svg"
-                    alt="Logo do LinkedIn" class="social_icon"
-                    >
-                </a>
-                <a href="https://github.com/Beatriz-Rodrigues-P" target="_blank">
-                    <img 
-                    src="./assets/img/github.svg"
-                    alt="Logo do Github" class="social_icon"
-                    >
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img 
-                    src="./assets/img/instagram.svg"
-                    alt="Logo do Instagram" class="social_icon"
-                    >
-                </a>
+            <div class="contato_content">
+                <h4>Entre em contato</h4>
             </div>
             
             <!-- Seção de formulário -->
-
-            <h4 class="form_title">Formulário</h4>
-            <p class="form_subtitle">Vamos construir projetos incríveis juntos? Preencha o formulário que entrarei em contato.</p>
-            <form action="envioform.html" method="POST">
+            <form action="https://formsubmit.co/b390b20628851dc90c928f682bc64a9b" method="POST" id="formulario">
+                <p class="form_subtitle">Surgiu uma curiosidade sobre meu trabalho? Preencha o formulário e vamos agregar ideias!</p>
+            
                 
+                <input type="hidden" name="_next" value="http://localhost:5500/envioform.html">
+                <input type="hidden" name="_captcha" value="false">
+
                 <label for="nome">Nome</label>
                 <input 
                     id="nome" 
@@ -169,8 +132,30 @@
     
     <!-- Rodapé da Página-->
     <footer class="flex footer_container footer_content">
-        Feito com 💜 por Beatriz Rodrigues - 2025
+
+        <div class="footer_text">
+            ❤ Made with love and code by Beatriz Rodrigues - 2025 ❤
+        </div>
+
+        <!-- Seção social -->
+        <div id="icones_redes_sociais" class="flex social_container">
+            <a href="https://www.linkedin.com/in/beatriz-rodrigues-paula" target="_blank">
+                <img src="./assets/img/linkedin.svg" alt="Logo do LinkedIn" class="social_icon">
+            </a>
+        
+            <a href="https://github.com/Beatriz-Rodrigues-P" target="_blank">
+                <img src="./assets/img/github.svg" alt="Logo do Github" class="social_icon">
+            </a>
+        
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="./assets/img/instagram.svg" alt="Logo do Instagram" class="social_icon">
+            </a>
+        </div>
     </footer>
+
+    <!-- Script JS -->
+    <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
